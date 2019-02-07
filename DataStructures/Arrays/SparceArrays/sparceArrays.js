@@ -33,7 +33,8 @@ function matchingStrings(strings, queries) {
 
     // the length of this counterArray is based on the length of the querires array
         // this is because the counterArray itself counts the amount of times earch query string exists
-    // This will initialize an array with all zeros to start
+
+    // This for loop will initialize an array with all zeros to start
     // for example, if the queries array has a lengh of 3 => counterArray = [0,0,0]
     for (var i = 0; i < queries.length; i++) {
         counterArray[i] = 0;
