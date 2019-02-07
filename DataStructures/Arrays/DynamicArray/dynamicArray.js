@@ -62,11 +62,15 @@ function dynamicArray(n, queries) {
             let x = queries[i][1];
             let y = queries[i][2];
 
-            let seq = ((x ^ lastAnswer) % N); // Step 1
-            // this is the difference between Query 1 and 2
-            // in the directions where it says size, it means length => S[seq].length
+            // same first step as in Query 1
+            let seq = ((x ^ lastAnswer) % N); // *Step 1*
 
-            // First I will show this all in one line how the directions describe
+            // Now comes the difference between Query 1 and 2
+            // in the directions where it says size of S[seq], it means length => S[seq].length
+            // From looking at discussion boards, this is the most confusing part
+            // Hopefully this helps to clear things up for you!
+
+            // First I will show this all in one line of code, how the directions describe
             // lastAnswer = S[seq][(y % S[seq].length)] // *Step 2*
 
             let index = (y % S[seq].length); // *Step 2*
@@ -78,7 +82,7 @@ function dynamicArray(n, queries) {
             lastAnswerArray.push(lastAnswer);
         }
     }
-    // returning the lastAnserArray prints the individual values out how hackerrank wants
+    // returning the lastAnswerArray prints the individual values out how hackerrank wants
         // this part can be kind of confusing if you are not used to hackerrank
     return lastAnswerArray;
 }

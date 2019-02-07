@@ -2,6 +2,8 @@
     // to trasnferring over to hackerrank
 // I simply use node so I can view the answers in the terminal using console.log
 
+// There are further detailed hints and instructions in the other file!!
+
 
 const queryExample = [[1,0,5],
                       [1,1,7],
