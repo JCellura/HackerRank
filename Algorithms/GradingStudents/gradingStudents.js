@@ -28,10 +28,18 @@ function readLine() {
 function gradingStudents(grades) {
     let newArray = [];
     for (var i = 0; i < grades.length; i++) {
+        // if their grade is already 70, 80, 90 ect. we dont change it 
+        // and push it to array
         if (grades[i] % 10 == 0) {
             newArray.push(grades[i]);
         }
-        else if (grades[i] > 35 && grades[i] != 100) {
+        // else if grades are over 37, we floor the number first
+        // and then find the difference between the original value and the floored value
+        // We use the value tp decide if that value should stay the same, for example 6 doesnt round up
+        // or if it should round up, for example 8 rounds up to 10
+        // and then we add that new value to the floored number for the final rounded number
+        // we then push these rounded numbers into the array
+        else if (grades[i] > 37) {
             let roundedNumber;
             var baseNumber = Math.floor(grades[i] / 10);
             baseNumber = baseNumber.toString() + 0
@@ -53,6 +61,7 @@ function gradingStudents(grades) {
             roundedNumber = baseNumber + newValue
             newArray.push(roundedNumber);
         } 
+        // else if a number is less than or equal to 37 it immediately gets pushed into the array 
          else { newArray.push(grades[i]) }
     } return newArray;
 
