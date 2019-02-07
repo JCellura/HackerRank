@@ -23,7 +23,7 @@ function readLine() {
 }
 
 /*
- * Complete the simpleArraySum function below.
+ * Complete the simpleArraySum function below
  */
 function simpleArraySum(ar) {
     var sum = ar.reduce((acc, cur) => {
