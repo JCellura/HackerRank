@@ -66,14 +66,20 @@ function printSinglyLinkedList(node, sep, ws) {
 
 /*
  * For your reference:
- *
+ * This is what head looks like when it is printed or console.log
  * SinglyLinkedListNode {
- *     int data;
- *     SinglyLinkedListNode next;
+ *     data: 4,
+ *     next:
+ *      SinglyLinkedListNode {
+ *          data: 3,
+ *          next:
+ *            SinglyLinkedListNode {
+ *              data: 2, next: [SinglyLinkedListNode] 
+ *           }
+ *     }
  * }
  *
  */
-
 //  What we are trying to acheive is to disply the data value of a specific node
     // This node is a certain distance from the 'Tail' which is the final node in the linked list
         // i.e head = first node, tail = last node
