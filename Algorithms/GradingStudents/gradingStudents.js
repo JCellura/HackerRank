@@ -63,8 +63,8 @@ function gradingStudents(grades) {
         } 
         // else if a number is less than or equal to 37 it immediately gets pushed into the array 
          else { newArray.push(grades[i]) }
-    } return newArray;
-
+    } 
+    return newArray;
 }
 
 function main() {
