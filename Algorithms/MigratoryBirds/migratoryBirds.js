@@ -67,10 +67,10 @@ function migratoryBirds(arr) {
     }
 
     // For any confused by the logic behind -> for (var num in numMap) it is the same as..
-    // let keysArray = Object.keys(obj)
+    // let keysArray = Object.keys(numMap)
     // for (var i=0; i<keysArray.length; i++) {
-    //     if (obj[keysArray[i]] > maxNum) {
-    //         maxNum = obj[keysArray[i]];
+    //     if (numMap[keysArray[i]] > maxNum) {
+    //         maxNum = numMap[keysArray[i]];
     //         maxChar = keysArray[i];
     //     }
     // }

@@ -27,6 +27,7 @@ function migratoryBirds(arr) {
     let key = keysArray[valueLocation];
 
     console.log(key);
+    return key;
 
 }
 
