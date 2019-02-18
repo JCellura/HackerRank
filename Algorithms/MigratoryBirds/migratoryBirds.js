@@ -57,7 +57,7 @@ function migratoryBirds(arr) {
     // Essentailly, we are finding the max number and because maxNum starts at zero,
     // the first itiration through maxNum will be set to numMap[num] which for example,
     // if numMap = {'1':1, '3':1, '4':3, '5':1} num = 1 in the first itiration so numMap[1] = 1
-    // and because 1 > 0 => maxNum will be set to euqal 1, numMap[3] = 1 will fail because its not greater than 1,
+    // and because 1 > 0 => maxNum will be set to equal 1, numMap[3] = 1 will fail because its not greater than 1,
     // then numMap[4] = 3 which 3 > 1 so maxNum will be set to equal 3 and maxChar will be set to 4 (num) 
     for (var num in numMap) {
         if (numMap[num] > maxNum) {
